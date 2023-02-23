@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="partials :: head ('Welcome to My Website')">
+</head>
+<body class="main-container main-bg">
+<nav th:replace="partials :: navbar"></nav>
+<main class="container">
+  <h1>User guessed <span th:text="${number}"></span>. The die landed on <span th:text="${result}"></span>.</h1>
+  <h1 th:if="${number != result}">You were wrong!!!</h1>
+  <h1 th:if="${number == result}">You were right!!!</h1>
+</main>
+<footer th:replace="partials :: footer"></footer>
+<div th:replace="partials :: boot-scripts"></div>
+</body>
+</html>
