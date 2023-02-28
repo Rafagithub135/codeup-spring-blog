@@ -1,8 +1,17 @@
 package com.codeup.codeupspringblog.models;
 
+import jakarta.persistence.*;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@Entity
+@Table(name="posts")
 public class Post {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(nullable = false, length = 100)
     private String title;
+    @Column(nullable = false)
     private String body;
 
     public Post() {

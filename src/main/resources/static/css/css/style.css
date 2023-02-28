@@ -1,0 +1,27 @@
+body {
+    background-color: olivedrab;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+.nav-link {
+    display: block;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.fa-solid {
+    font-size: 3em;
+    color: red;
+}
+
+.title {
+    font-size: 2em;
+    color: #000000;
+}
